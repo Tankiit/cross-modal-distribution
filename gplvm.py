@@ -59,7 +59,7 @@ if __name__== "__main__":
    #training parameters. Need to fill this
    
    #Read dataset
-   fname='cell_phones_and_accessories_v1.p'
+   fname='vocab.p'
    sentences=read_dataset(fname)
    sentences_train=sentences[0:300]
    sentences_test=sentences[301:]   
