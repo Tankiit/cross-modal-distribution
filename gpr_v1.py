@@ -191,11 +191,6 @@ def grad_desc(K,data,vocab,Ytrain,vocab_embeddings,Xtrain,train_tokens,max_iter=
     return vocab_embeddings,K    
 
 
-data=pickle.load(open('cell_phones_and_accessories_v1.p','rb'))
-vocab=build_vocab('cell_phones_and_accessories_v1.p')
-ratings=get_ratings('cell_phones_and_accessories_ratings_v1.p')
-vocab_embeddings=pickle.load(open('vocab_embeddings.p','rb'))
-train_embedding=train_embeddings(vocab_embeddings,'cell_phones_and_accessories_v1.p')
 
 #The token list contains the id of the tokens
 token_list=iterate_corpus(vocab,'cell_phones_and_accessories_v1.p')
